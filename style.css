@@ -134,9 +134,7 @@ body{
     border: 1px solid #eee;
     transition: .3s border-color;
 }
-#name, #em, #nu, #te:hover {
-    border: 1px solid #aaa;
-}
+
 
 
 #te {
