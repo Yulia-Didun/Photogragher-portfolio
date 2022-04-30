@@ -7,11 +7,8 @@
         <title>My Portfolio</title>
     </head>
     <body>
-        <header>
-            <div>
-            <div>
-      
-            <div class="Logo"></div>
+  
+            <div class="container">
       
               <nav class="Menu">
                 <ul id="Items">
@@ -25,23 +22,23 @@
                   <hr id="n2"/>
                 </ul>
               </nav>
-      
+    
             </div>
-            </div>
-          </header>
           
-        <div class="banner-img"> </div>
+        <div class="banner-img">
+           </div>
         
         <div class="banner-text">
             <h1>Olivia Brennan</h1>
             <p><i>“Photography is a way of feeling, of touching, of loving. What you have caught on film is captured forever… It remembers little things, long after you have forgotten everything.”
-                — Aaron Siskind“Photography is a way of feeling, of touching, of loving. What you have caught on film is captured forever… It remembers little things, long after you have forgotten everything.”
                 — Aaron Siskind</i></p>
 
         </div>
 
-        <div>
-            <h4 style="text-align: center; font-size: 30px; margin-bottom: 15px" id="h">About me</h4>
+      
+        <div class="content">
+        <div class="about">
+            <h4 style="text-align: center; font-size: 30px; margin-bottom: 15px" id="h"><u>About me</u></h4>
             <p style="text-align: center; font-size: 20px;">Hello, my name is Olivia Brennan! <br>I love creating images that make the viewer feel as if they are stepping into a dream. I am a portrait and commercial photographer. 
                 <br> I began my journey through photography at the age of 15. I then wen't on to study for 3 years, graduating with an Advanced Diploma in Photography in 2009.  
                 <br>I hope to help create breathtaking images for all mediums be, commercial, domestic, creative + fashion.
@@ -62,25 +59,43 @@
                     <td style="background-color: rgba(99, 67, 8, 0.5);">The last photo shoot</td>
                     <td style="background-color: rgba(99, 67, 8, 0.192);"> On <time>22.03.2022</time></td>
                 </tr>   
-                
             </table>
         </div>
+
+        <div>
+          <h6>Listen to some music while exploring the <s>site</s> portfolio!</h6>
+          <audio controls src="Calm-and-Peaceful.mp3">Your browser does not support the <code>audio</code> element
+          </audio>
+        </div>
         
-        <div class="image-grid" id="im">
-            <img src="yuliia-tretynychenko-OO2y0p4XsZI-unsplash.jpg" alt="loading">
-            <img src="christopher-lee-lPVPENOTmSs-unsplash.jpg" alt="loading">
-            <img src="yevhenii-ometsynskyi-s4S2yHey9RU-unsplash.jpg" alt="loading">
-            <img src="abstract-series-13-1529920 - копия.jpg" alt="loading">
-            <img src="thuyen-ngo-beV-aveZsoo-unsplash.jpg" alt="loading">
-            <img src="juniperphoton-F8H4JZwbfgA-unsplash.jpg" alt="loading">
-            <img src="alexey-demidov-Wrg6ryToKi4-unsplash - копия.jpg" alt="loading">
-            <img src="ryunosuke-kikuno-X49jUCkRAfk-unsplash.jpg" alt="loading">
-            <img src="axel-bimashanda-6AELykBi6Eo-unsplash - копия.jpg" alt="loading">
+        
+        <div class="image-grid">
+            <div class="image-div"><img id="image-item" src="yuliia-tretynychenko-OO2y0p4XsZI-unsplash.jpg" alt="loading"></div>
+            <div class="image-div"><img id="image-item" src="christopher-lee-lPVPENOTmSs-unsplash.jpg" alt="loading"></div>
+            <div class="image-div"><img id="image-item" src="yevhenii-ometsynskyi-s4S2yHey9RU-unsplash.jpg" alt="loading"></div>
+            <div class="image-div"><img id="image-item" src="abstract-series-13-1529920 - копия.jpg" alt="loading"></div>
+            <div class="image-div"><img id="image-item" src="thuyen-ngo-beV-aveZsoo-unsplash.jpg" alt="loading"></div>
+            <div class="image-div"><img id="image-item" src="juniperphoton-F8H4JZwbfgA-unsplash.jpg" alt="loading"></div>
+            <div class="image-div"><img id="image-item" src="alexey-demidov-Wrg6ryToKi4-unsplash - копия.jpg" alt="loading"></div>
+            <div class="image-div"><img id="image-item" src="ryunosuke-kikuno-X49jUCkRAfk-unsplash.jpg" alt="loading"></div>
+            <div class="image-div"><img id="image-item" src="axel-bimashanda-6AELykBi6Eo-unsplash - копия.jpg" alt="loading"></div>
+        </div>
+      
+        <div class="download">
+          <a href="images.pdf" download>
+            Click Here to download the images
+        </a>
         </div>
 
-        <div id="contact">
+        <div class="file">
+          <progress  max="100" value="70" style="width:70%; height:20px"></progress>
+        </div>
+
+        <div>
             <h4 style="text-align: center; font-size: 30px; margin-bottom: 15px">Contact me</h4>
+           <div id="contact">
             <form>
+              <div> 
                 <p><label for="name">Name
                   <input type="text" id="name" placeholder="name surname">
                 </label></p>
@@ -93,8 +108,16 @@
                 <p><label for="project">Tell me about your project\event
                     <textarea id="te"></textarea>
                 </label></p>
-                <p><input type="submit" value="Send" id="submit-button"></p>
+              </div>
+               <div>
+                 <p style="flex-grow: 1"><input type="submit" value="Send" id="submit-button"></p>
+               </div>
+
+
+               <input type="hidden" id="postID" name="User ID" value="33333">
               </form>
+            </div>
+        </div>
         </div>
     </body>
 </html>
